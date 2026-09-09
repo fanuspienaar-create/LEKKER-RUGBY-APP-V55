@@ -1,0 +1,16 @@
+name = "lekker-rugby-api"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lekker-rugby"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
+
+[vars]
+ROUND_ID = "world-xv-2026"
+
+# RUGBY_API_KEY must be added as a Cloudflare secret (do not put the key in this file).
